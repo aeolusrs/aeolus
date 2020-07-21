@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Lang }}">
 
 <head>
 
@@ -7,9 +7,9 @@
 	<title>Aeolus</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="{{ "images/favicon.png" | relURL}}">
 	<meta property="og:image" content="images/dest/preview.jpg">
-	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="{{ "css/app.min.css" | relURL}}">
 
 </head>
 
@@ -19,18 +19,22 @@
 	<div class="language">
 		<div class="dropdown choose-language">
 			<a href="#" class="dropdown-toggle" id="choose-language-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				 EN
+				 {{upper .Lang }}
 			</a>
 			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="choose-language-btn">
-				<a class="dropdown-item" href="#">SR </a>
-				<a class="dropdown-item" href="#">RU</a>
-				<a class="dropdown-item" href="#">EN</a>
+                    {{ if .IsTranslated }}
+                         {{ range .Translations }}
+                            <a class="dropdown-item" href="{{ .Permalink }}">{{upper .Lang }} </a>
+                            <!-- a class="dropdown-item" href="#">RU</a -->
+                            <!-- a class="dropdown-item" href="#">EN</a -->
+                         {{ end }}
+                    {{ end }}
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<a class="navbar-brand" href="#">
-			<img src="images/dest/logo.svg" width="180" alt="" title="" loading="lazy">
+			<img src="{{ "images/dest/logo.svg" | relURL }}" width="180" alt="" title="" loading="lazy">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="mainnavbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -97,7 +101,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="prewiew-image">
-					<img class="img-fluid" src="images/dest/video.png" alt="" title="">
+					<img class="img-fluid" src="{{ "images/dest/video.png" | relURL}}" alt="" title="">
 					<a href="#" class="mask"></a>
 				</div>
 			</div>
@@ -189,7 +193,7 @@
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="images/dest/ic_1.png" alt="" title="">
+						<img src="{{ "images/dest/ic_1.png" | relURL}}" alt="" title="">
 					</div>
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -199,7 +203,7 @@
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="images/dest/ic_2.png" alt="" title="">
+						<img src="{{ "images/dest/ic_2.png" | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -209,7 +213,7 @@
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="images/dest/ic_3.png" alt="" title="">
+						<img src="{{ "images/dest/ic_3.png" | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -219,7 +223,7 @@
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="images/dest/ic_4.png" alt="" title="">
+						<img src=" {{"images/dest/ic_4.png" | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -229,7 +233,7 @@
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="images/dest/ic_5.png" alt="" title="">
+						<img src="{{"images/dest/ic_5.png" | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -239,7 +243,7 @@
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="images/dest/ic_6.png" alt="" title="">
+						<img src="{{"images/dest/ic_6.png" | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -265,7 +269,7 @@
 			<div class="col-md-6 col-lg-3">
 				<div class="kontur">
 					<a href="#" class="kontur-image">
-						<img src="images/dest/antistress.png" alt="" title="" class="img-fluid">
+						<img src="{{ "images/dest/antistress.png" | relURL }}" alt="" title="" class="img-fluid">
 					</a>
 					<div class="description">
 						<h4 class="kontur-title">Kontur<br> antistress</h4>
@@ -279,7 +283,7 @@
 			<div class="col-md-6 col-lg-3">
 				<div class="kontur">
 					<a href="#" class="kontur-image">
-						<img src="images/dest/kontur.png" alt="" title="" class="img-fluid">
+						<img src="{{ "images/dest/kontur.png" | relURL }}" alt="" title="" class="img-fluid">
 					</a>
 					<div class="description">
 						<h4 class="kontur-title">Kontur<br> argent</h4>
@@ -293,7 +297,7 @@
 			<div class="col-md-6 col-lg-3">
 				<div class="kontur">
 					<a href="#" class="kontur-image">
-						<img src="images/dest/rost.png" alt="" title="" class="img-fluid">
+						<img src="{{ "images/dest/rost.png" | relURL }}" alt="" title="" class="img-fluid">
 					</a>
 					<div class="description">
 						<h4 class="kontur-title">Kontur<br> rost</h4>
@@ -307,7 +311,7 @@
 			<div class="col-md-6 col-lg-3">
 				<div class="kontur">
 					<a href="#" class="kontur-image">
-						<img src="images/dest/start.png" alt="" title="" class="img-fluid">
+						<img src="{{ "images/dest/start.png" | relURL}}" alt="" title="" class="img-fluid">
 					</a>
 					<div class="description">
 						<h4 class="kontur-title">Kontur<br> start</h4>
@@ -331,7 +335,7 @@
 						<div class="col-md-6">
 							<div class="description">
 								<div class="logo">
-									<img src="images/dest/tillo.png" alt="" title="" class="img-fluid">
+									<img src="{{ "images/dest/tillo.png" | relURL }}" alt="" title="" class="img-fluid">
 								</div>
 								<p>With Tillo.app you can record, share and retrieve any information 
 									you need of your farm business, directly from your phone with one 
@@ -345,7 +349,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="prewiew">
-								<img class="rounded img-fluid" src="images/dest/tillo2.png" alt="" title="">
+								<img class="rounded img-fluid" src="{{ "images/dest/tillo2.png" | relURL}}" alt="" title="">
 								</div>	
 						</div>
 					</div>
@@ -355,7 +359,7 @@
 						<div class="col-md-6">
 							<div class="description">
 								<div class="logo">
-									<img src="images/dest/tillo.png" alt="" title="" class="img-fluid">
+									<img src="{{ "images/dest/tillo.png" | relURL }}" alt="" title="" class="img-fluid">
 								</div>
 								<p>With Tillo.app you can record, share and retrieve any information 
 									you need of your farm business, directly from your phone with one 
@@ -364,7 +368,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="prewiew">
-								<img class="rounded img-fluid" src="images/dest/tillo2.png" alt="" title="">
+								<img class="rounded img-fluid" src="{{ "images/dest/tillo2.png" | relURL}}" alt="" title="">
 							</div>
 						</div>
 					</div>
@@ -374,7 +378,7 @@
 						<div class="col-md-6">
 							<div class="description">
 								<div class="logo">
-									<img src="images/dest/tillo.png" alt="" title="" class="img-fluid">
+									<img src="{{ "images/dest/tillo.png" | relURL }}" alt="" title="" class="img-fluid">
 								</div>
 								<p>With Tillo.app you can record, share and retrieve any information 
 									you need of your farm business, directly from your phone with one 
@@ -386,7 +390,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="prewiew">
-								<img class="rounded img-fluid" src="images/dest/tillo2.png" alt="" title="">
+								<img class="rounded img-fluid" src="{{ "images/dest/tillo2.png" | relURL}}" alt="" title="">
 							</div>							
 						</div>
 					</div>
@@ -444,7 +448,7 @@
 		</div>
 	</div>
 </footer>
-	<script src="js/app.min.js"></script>
+	<script src="{{ "js/app.min.js" | relURL }}"></script>
 
 </body>
 </html>
