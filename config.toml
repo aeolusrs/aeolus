@@ -1,21 +1,22 @@
 baseURL = "http://example.org/"
-title = "My New Hugo Site"
-DefaultContentLanguage: sr
-defaultContentLanguageInSubdir: true
-copyright: Aeolus d.o.o Novi Sad
-languages:
-     en:
-          contentDir: content/en
-          languageName: English
-          title: Aeolus
-          weight: 30 
-     ru:
-          contentDir: content/ru
-          languageName: Русский 
-          title: Aeolus
-          weight: 10
-     sr:  
-          contentDir: content/sr
-          languageName: Српски 
-          title: Aeolus
-          weight: 20
+title = "Aeolus d.o.o. Novi Sad"
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
+copyright = "Aeolus d.o.o Novi Sad"
+
+[languages]
+     [languages.en]
+          contentDir = "content/en"
+          languageName = "English"
+          title = "Aeolus"
+          weight = 30 
+     [languages.ru] 
+          contentDir = "content/ru"
+          languageName = "Русский" 
+          title = "Aeolus"
+          weight = 10
+     [languages.sr] 
+          contentDir = "content/sr"
+          languageName = "Српски"
+          title = "Aeolus"
+          weight = 20
