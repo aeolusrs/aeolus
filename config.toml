@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 title = "Aeolus d.o.o. Novi Sad"
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
+disableHugoGeneratorInject = true
 copyright = "Aeolus d.o.o Novi Sad"
 
 [languages]
@@ -20,3 +21,13 @@ copyright = "Aeolus d.o.o Novi Sad"
           languageName = "Српски"
           title = "Aeolus"
           weight = 20
+
+[markup]
+     defaultMarkdownHandler = "goldmark"
+     [markup.blackFriday]
+          smartDashes = true
+          plainIDAnchors = true
+
+     [markup.goldmark]
+          [markup.goldmark.parser]
+               autoHeadingID = false

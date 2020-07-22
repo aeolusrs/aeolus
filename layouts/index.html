@@ -25,8 +25,6 @@
                     {{ if .IsTranslated }}
                          {{ range .Translations }}
                             <a class="dropdown-item" href="{{ .Permalink }}">{{upper .Lang }} </a>
-                            <!-- a class="dropdown-item" href="#">RU</a -->
-                            <!-- a class="dropdown-item" href="#">EN</a -->
                          {{ end }}
                     {{ end }}
 			</div>
@@ -81,18 +79,10 @@
 
 <section id="banner">
 		<div class="container">
-		<h1>
-			Increasing the efficiency of <br>
-			agricultural enterprises</h1>
-			<p>A modern company specializing in 
-				the development, production and sale of 
-				chemical plant protection products.</p>
-			<ul>
-				<li>Wide range of high quality products</li>
-				<li>Technologies for agribusiness</li>
-				<li>Transition to environmental production</li>
-			</ul>
-			<a href="#" class="btn big-green-btn">More details</a>
+               {{ with .Site.GetPage "frontpage/main.md" }}
+                      {{ .Content }}
+               {{ end }}
+			<a href="#" class="btn big-green-btn">{{ i18n "moreDetails" }}</a>
 	</div>
 </section>
 
@@ -113,7 +103,7 @@
 					knowledge and experience in the field of development, 
 					selection and use of chemical plant protection products in 
 					the specific conditions of your agricultural enterprise.</p>
-					<a href="#" class="btn green-btn">More details</a>
+					<a href="#" class="btn green-btn">{{ i18n "moreDetails" }}</a>
 			</div>
 		</div>
 	</div>
@@ -276,7 +266,7 @@
 						<p>An innovative complex organic-mineral fertilizer 
 							containing silver nanoparticles in colloidal form, 
 							a complex of active plant L-amino acids, a complex of</p>
-							<a href="#" class="btn btn-block green-btn">More details</a>
+							<a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
 					</div>
 				</div>
 			</div>
@@ -290,7 +280,7 @@
 						<p>An innovative complex organic-mineral fertilizer 
 							containing silver nanoparticles in colloidal form, 
 							a complex of active plant L-amino acids, a complex of</p>
-							<a href="#" class="btn btn-block green-btn">More details</a>
+							<a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
 					</div>
 				</div>
 			</div>
@@ -304,7 +294,7 @@
 						<p>An innovative complex organic-mineral fertilizer 
 							containing silver nanoparticles in colloidal form, 
 							a complex of active plant L-amino acids, a complex of</p>
-							<a href="#" class="btn btn-block green-btn">More details</a>
+							<a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
 					</div>
 				</div>
 			</div>
@@ -318,7 +308,7 @@
 						<p>An innovative complex organic-mineral fertilizer 
 							containing silver nanoparticles in colloidal form, 
 							a complex of active plant L-amino acids, a complex of</p>
-							<a href="#" class="btn btn-block green-btn">More details</a>
+							<a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
 					</div>
 				</div>
 			</div>
@@ -449,6 +439,7 @@
 	</div>
 </footer>
 	<script src="{{ "js/app.min.js" | relURL }}"></script>
+	<script src="{{ "js/app.js" | relURL }}"></script>
 
 </body>
 </html>
