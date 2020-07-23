@@ -1,0 +1,399 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+.big-green-btn
+	background-color: $primary
+	color: $white
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 18px
+	position: relative
+	padding: .7rem 2rem
+	&:hover
+		background-color: #043418
+		color: $white
+		&::after
+			right: .8rem
+
+.green-btn
+	background-color: $primary
+	color: $white
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 18px
+	position: relative
+	padding: .475rem 5rem .475rem .95rem
+	&:hover
+		background-color: #043418
+		color: $white
+		&::after
+			right: .8rem
+	&::after
+		content: ""
+		background-image: url(../images/dest/arr_wh.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		width: 20px
+		height: 20px
+		position: absolute
+		right: 1rem
+		top: .7rem
+		transition: .15s
+.h-bg
+	font-weight: 800
+	text-transform: uppercase
+	color: #5e5e60
+	font-size: 30px
+	line-height: 70px
+	.bg
+		font-size: 4.5rem
+		position: absolute
+		opacity: .1
+		font-size: 70px
+
+.h-bg-big
+	font-size: 46px
+	line-height: 92px
+	margin-bottom: 2rem
+	.bg
+		left: 0
+		right: 0
+		text-align: center
+		font-size: 92px
+		line-height: 92px
+
+#mainnav
+	border-bottom: 5px solid #79b51f
+	background-color: $white
+	padding: 0
+	.container		
+		align-content: stretch
+		align-items: stretch
+		background-color: $white
+		z-index: 100
+	.navbar-brand
+		padding-top: .7rem
+		padding-bottom: .7rem
+	.navbar-nav
+		margin-left: 2rem
+		padding-top: .7rem
+		padding-bottom: .7rem
+		background-color: $white
+		.nav-link
+			text-transform: uppercase
+			color: #252533
+			font-weight: 700
+			font-size: 12px
+			padding-right: 1rem
+			padding-left: 1rem
+	.contact
+		color: #79b51f
+		font-weight: 600
+		text-transform: uppercase
+		font-size: 12px
+		padding-right: 1rem
+		padding-left: 1rem
+	.phone
+		color: $white
+		font-weight: 600
+		background-color:#79b51f
+		position: relative
+		right: 0
+		display: flex
+		align-items: center
+		padding-right: 1rem
+		padding-left: 1rem
+		margin-right: -15px
+	.language
+		position: absolute
+		background-color:#79b51f
+		right: 0
+		top: 0
+		bottom: 0
+		width: 50%
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding-right: 1rem
+		.choose-language
+			.dropdown-toggle
+				color: $white
+
+@include media-breakpoint-down(lg)
+	#mainnav
+		.phone
+			display: none
+		.language
+			display: none
+@include media-breakpoint-down(md)
+	#mainnav
+		.container
+			padding-right: 1rem
+			padding-left: 1rem
+			align-items: center
+		.language
+			display: none
+
+#banner
+	padding-top: 5rem
+	padding-bottom: 5rem
+	background-image: url(../images/dest/bg1.png)
+	background-position: right bottom
+	background-size: cover
+	border-bottom: 5px solid #79b51f
+	h1
+		font-size: 48px
+		text-transform: uppercase
+		color: #197d36
+		margin-bottom: 3rem
+	p
+		max-width: 480px
+		margin-bottom: 3rem
+	ul		
+		padding-left: 1rem
+		margin-bottom: 3rem
+		li
+			margin-bottom: .7rem
+			&::before
+				color: #197d36
+
+@include media-breakpoint-down(md)
+	#banner
+		h1
+			font-size: 32px
+
+#about
+	padding-top: 5rem
+	padding-bottom: 5rem
+	.prewiew-image
+		position: relative
+		.mask
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-image: url(../images/dest/play-button.png)
+			background-repeat: no-repeat
+			background-position: center center
+			transition: .3s	
+			&:hover				
+ 				transform: scale(1.2)
+
+#services
+	background-color: #eeeeee
+	.service_wrap
+		display: flex
+	.service
+		display: block
+		margin-bottom: 1rem
+		border-radius: .35rem
+		padding: 1.5rem 0 2rem 2rem
+		transition: .5s
+		.service_heading
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 1.5rem
+			margin-bottom: .8rem
+		.description
+			padding-right: 10rem
+			.more	
+				display: block
+				width: 30px
+				height: 30px
+				//background-image: url(../images/dest/arr_wh.svg)
+				//background-repeat: no-repeat
+				//background-position: center center
+				transition: .5s	
+		&.service_wh
+			background-color: $white
+			color: $textcolor
+			background-image: url(../images/dest/antisress.png)
+			background-repeat: no-repeat
+			background-position: bottom right
+			.more	
+				svg
+					path
+						fill: #79b51f
+			&:hover					
+				svg
+					path
+						fill: $white					
+			&:hover			
+				background-color: #79b51f
+				color: $white
+		&.service_lgr
+			background-color: #79b51f
+			color: $white
+			background-image: url(../images/dest/drone.png)
+			background-repeat: no-repeat
+			background-position: right bottom
+			&:hover			
+				background-color: #043418
+		&.service_dgr
+			background-color: #043418
+			color: $white
+			background-image: url(../images/dest/app.png)
+			background-repeat: no-repeat
+			background-position: right bottom
+			&:hover			
+				background-color: #79b51f
+		&:hover			
+			text-decoration: none
+			box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+			.more	
+				margin-left: 10px
+@include media-breakpoint-down(xs)
+	#services
+		.service
+			.description
+				padding-right: 5rem
+#advantages
+	.advantage
+		display: flex
+		flex-direction: column
+		align-items: center
+		.icon
+			background-color: #79b51f
+			width: 110px
+			height: 110px
+			margin-bottom: 1rem
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			border: 5px solid $white
+			box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 0px 3px 0 rgba(0,0,0,.12)
+			img
+				max-width: 65px
+				max-width: 100%
+		.description
+			text-align: center
+
+#siries
+	background-color: #eeeeee
+	.kontur
+		margin-bottom: 3rem
+		.kontur-image
+			margin-bottom: 1rem
+			display: block
+			background-color: $white
+			border-radius: .5rem
+			img
+				transition: .3s
+			&:hover
+				img
+					transform: scale(1.1)
+		.description
+			.kontur-title
+				font-weight: 800
+				color: #5e5e60
+				text-transform: uppercase
+
+#app
+	#app-carousel
+		.row
+			flex-direction: row
+		.app-controls
+			position: absolute
+			left: 0
+			bottom: 0
+			z-index: 1000
+			display: flex
+			align-items: center
+			.contr
+				svg
+					path
+						fill: #eee
+						transition: .15s
+				&:hover
+					svg
+						path
+							fill: #79b51f					
+			.prev
+				margin-right: 7px
+				svg
+					transform: rotate(180deg)
+			.link
+				color:#79b51f
+				text-decoration: underline
+				text-transform: uppercase
+				font-weight: 600
+				font-size: 1.1rem
+				margin-left: 3rem
+		.description
+			padding-bottom: 2rem
+			.logo
+				margin-bottom: 2rem
+		.prewiew
+			padding-bottom: 0
+
+@include media-breakpoint-down(sm)
+	#app
+		#app-carousel
+			.prewiew
+				padding-bottom: 3rem
+			.row
+				flex-direction: column-reverse
+
+#motivation
+	background-image: url(../images/dest/bg2.png)
+	background-size: cover
+	color: #fff
+	text-align: center
+	padding-top: 4rem
+	padding-bottom: 4rem
+	.motivation-title
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 2rem
+	.description
+		margin-bottom: 2rem
+
+#mainfooter
+	padding-top: 2.5rem
+	padding-bottom: 2rem
+	color: #5e5e60
+	.footer-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.call
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 26px
+			line-height: 34px
+			span
+				display: block
+			a
+				color: #79b51f
+		.social
+			.icons
+				display: flex
+				justify-content: center
+				margin-bottom: .5rem
+				a
+					display: block
+					width: 35px
+					text-align: center
+					transition: .15s
+					&:hover
+						svg
+							path
+								fill: #043418
+		.contacts
+			text-align: right
+			p
+				margin-bottom: 0
+			a
+				color: #5e5e60
+
+@include media-breakpoint-down(sm)
+	#mainfooter
+		.footer-wrap
+			flex-direction: column
+			.call
+				margin-bottom: 2rem
+			.social
+				margin-bottom: 2rem
