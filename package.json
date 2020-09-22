@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node-sass": "node-sass --ouput-style compressed  src/sass/main.sass -o src/css/"
+    "node-sass": "node-sass --output-style compressed  src/sass/main.sass -o src/css/"
   },
   "author": "",
   "license": "ISC",

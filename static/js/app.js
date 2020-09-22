@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	$('.carousel').carousel({
-		interval: 2000
+		interval: 15000
 	})
 });
