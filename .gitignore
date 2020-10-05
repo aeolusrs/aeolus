@@ -1,3 +1,5 @@
 node_modules/
-*.orig
+public/
 package-lock.json
+*.orig
+*.swp

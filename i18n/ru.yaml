@@ -1,2 +1,17 @@
 moreDetails:
      other: "Подробнее"
+
+contact:
+     other: "Контакты"
+
+getInTouch:
+     other: "Свяжитесь с нашим экспертом"
+
+giveUsACall:
+     other: "Позвоните нам"
+
+about:
+     other: "о нас"
+
+our:
+     other: "наши"

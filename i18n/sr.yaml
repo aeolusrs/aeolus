@@ -1,2 +1,17 @@
 moreDetails:
      other: "Сазнај више"
+
+contact:
+     other: "Контакте"
+
+getInTouch:
+     other: "Контактирајте нашег стручњака"
+
+giveUsACall:
+     other: "Позовите нас"
+
+about:
+     other: "о нама"
+
+our:
+     other: "наши"

@@ -5,7 +5,7 @@ draft: false
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-# Повышаем эффективность <br> сельского хозяйства 
+# Increasing the efficiency of <br> agricultural enterprises 
 
 A modern company specializing in the development, production and sale of chemical plant protection products
 

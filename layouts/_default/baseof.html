@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Aeolus</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="{{ "images/favicon.png" | relURL}}">
+	<meta property="og:image" content="images/dest/preview.jpg">
+	<link rel="stylesheet" href="{{ "css/app.min.css" | relURL}}">
+
+</head>
+
+<body>
+
+     {{ block "header" . }} {{ partial "site_header.html" . }} {{ end }}
+
+     {{ block "main" . }} {{ end }}
+
+     {{ block "footer" . }} {{ partial "site_footer.html" . }} {{ end }}
+
+     {{ block "scripts" . }} {{ partial "site_scripts.html" . }} {{ end }}
+
+</body>
+</html>

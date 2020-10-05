@@ -1,0 +1,12 @@
+
+<section id="motivation">
+	<div class="container">
+         {{ with .Site.GetPage "frontpage/motivation.md" }}
+              <h2 class="motivation-title">{{ .Title }}</h2>
+              <div class="description">
+                      {{ .Content }}
+              </div>
+         {{ end }}
+		<a href="#" class="btn green-btn">{{ i18n "getInTouch" }} </a>
+	</div>
+</section>

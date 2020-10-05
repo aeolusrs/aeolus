@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://evlakhov.fastmail.com"
 title = "Aeolus d.o.o. Novi Sad"
-defaultContentLanguage = "ru"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 disableHugoGeneratorInject = true
 copyright = "Aeolus d.o.o Novi Sad"
@@ -11,16 +11,92 @@ copyright = "Aeolus d.o.o Novi Sad"
           languageName = "English"
           title = "Aeolus"
           weight = 30 
+          
+          [[languages.en.menu.main]]
+                  url = "#"
+                  name = "About"
+                  weight = 200 
+          [[languages.en.menu.main]]
+                  url = "#"
+                  name = "Products"
+                  weight = 250 
+          [[languages.en.menu.main]]
+                  url = "#"
+                  name = "Services"
+                  weight = 300 
+          [[languages.en.menu.main]]
+                  url = "#"
+                  name = "Technology"
+                  weight = 350 
+          [[languages.en.menu.main]]
+                  url = "#"
+                  name = "Resources"
+                  weight = 450 
+          [[languages.en.menu.main]]
+                  url = "#"
+                  name = "Contact"
+                  weight = 500 
+
      [languages.ru] 
           contentDir = "content/ru"
           languageName = "Русский" 
           title = "Aeolus"
           weight = 10
+
+          [[languages.ru.menu.main]]
+                  url = "#"
+                  name = "О нас"
+                  weight = 200 
+          [[languages.ru.menu.main]]
+                  url = "#"
+                  name = "Продукты"
+                  weight = 250 
+          [[languages.ru.menu.main]]
+                  url = "#"
+                  name = "Сервисы"
+                  weight = 300 
+          [[languages.ru.menu.main]]
+                  url = "#"
+                  name = "Технологии"
+                  weight = 350 
+          [[languages.ru.menu.main]]
+                  url = "#"
+                  name = "Ресурсы"
+                  weight = 450 
+          [[languages.ru.menu.main]]
+                  url = "#"
+                  name = "Контакты"
+                  weight = 500 
+
      [languages.sr] 
           contentDir = "content/sr"
           languageName = "Српски"
           title = "Aeolus"
           weight = 20
+          [[languages.sr.menu.main]]
+                  url = "#"
+                  name = "О нама"
+                  weight = 200 
+          [[languages.sr.menu.main]]
+                  url = "#"
+                  name = "Производе"
+                  weight = 250 
+          [[languages.sr.menu.main]]
+                  url = "#"
+                  name = "Сервисе"
+                  weight = 300 
+          [[languages.sr.menu.main]]
+                  url = "#"
+                  name = "Технологије"
+                  weight = 350 
+          [[languages.sr.menu.main]]
+                  url = "#"
+                  name = "Ресурсе"
+                  weight = 450 
+          [[languages.sr.menu.main]]
+                  url = "#"
+                  name = "Контакте"
+                  weight = 500 
 
 [markup]
      defaultMarkdownHandler = "goldmark"

@@ -1,0 +1,71 @@
+<!-- TODO: add "benefits" to Data file -->
+<section id="advantages" class="py-5">
+	<div class="container">
+		<h2>Advantages <span>working with us</span></h2>
+            {{ with .Site.GetPage "frontpage/sections/advantages.md" }}
+                   {{ .Content }}
+            {{ end }}
+		<div class="row justify-content-center">
+			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+				<div class="advantage">
+					<div class="icon">
+						<img src="{{ "images/dest/ic_1.png" | relURL}}" alt="" title="">
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+				<div class="advantage">
+					<div class="icon">
+						<img src="{{ "images/dest/ic_2.png" | relURL }}" alt="" title="">
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+				<div class="advantage">
+					<div class="icon">
+						<img src="{{ "images/dest/ic_3.png" | relURL }}" alt="" title="">
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+				<div class="advantage">
+					<div class="icon">
+						<img src=" {{"images/dest/ic_4.png" | relURL }}" alt="" title="">
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+				<div class="advantage">
+					<div class="icon">
+						<img src="{{"images/dest/ic_5.png" | relURL }}" alt="" title="">
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+				<div class="advantage">
+					<div class="icon">
+						<img src="{{"images/dest/ic_6.png" | relURL }}" alt="" title="">
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
