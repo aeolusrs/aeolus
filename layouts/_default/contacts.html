@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+     <section class="py-5">
+     <div class="container">
+             <h1> Contact us </h1>
+
+             {{ .Content }}
+
+             <form class="py-5">
+                    <div class="form-group">
+                            <label for="fname">Name</label>
+                            <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="form-control" id="email" name="lastname" placeholder="Your e-mail address..">
+                    </div>
+
+                    
+                    <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit">
+
+          </form>
+     </div>
+     <section>
+
+
+{{ end }}

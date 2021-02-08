@@ -2,9 +2,8 @@
 <section id="advantages" class="py-5">
 	<div class="container">
 		<h2>Advantages <span>working with us</span></h2>
-            {{ with .Site.GetPage "frontpage/sections/advantages.md" }}
-                   {{ .Content }}
-            {{ end }}
+            {{ $headless := .Site.GetPage "/frontpage/sections" }}
+            {{ ($headless.Resources.GetMatch "advantages.md").Content }}
 		<div class="row justify-content-center">
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">

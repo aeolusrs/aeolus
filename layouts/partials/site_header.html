@@ -25,7 +25,7 @@
 			<ul class="navbar-nav mr-auto">
                     {{ range .Site.Menus.main}}
                          <li class="nav-item">
-                              <a class="nav-link" href="{{ .URL }}"> {{.Name}} </a>
+                              <a class="nav-link" href="{{ relLangURL .URL }}"> {{.Name}} </a>
                          </li>
                     {{ end }}
                     <!-- TODO: add active class to current menu element -->

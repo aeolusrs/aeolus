@@ -9,9 +9,8 @@
 			</div>
 			<div class="col-md-6">
 				<h2 class="h-bg"><span class="bg">{{ i18n "about"}}</span> About company</h2>
-                    {{ with .Site.GetPage "frontpage/sections/about.md" }}
-                           {{ .Content }}
-                    {{ end }}
+                    {{ $headless := .Site.GetPage "/frontpage/sections" }}
+                    {{ ($headless.Resources.GetMatch "about.md").Content }}
 					<a href="#" class="btn green-btn">{{ i18n "moreDetails" }}</a>
 			</div>
 		</div>

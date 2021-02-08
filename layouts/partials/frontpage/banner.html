@@ -1,8 +1,7 @@
 <section id="banner">
 		<div class="container">
-               {{ with .Site.GetPage "/frontpage/sections/main.md" }}
-                      {{ .Content }}
-               {{ end }}
+                      {{ $headless := .Site.GetPage "/frontpage/sections" }}
+                      {{ ($headless.Resources.GetMatch "main.md").Content }}
 			<a href="#" class="btn big-green-btn">{{ i18n "moreDetails" }}</a>
 	</div>
 </section>

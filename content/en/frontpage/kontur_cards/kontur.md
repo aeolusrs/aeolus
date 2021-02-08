@@ -1,5 +1,5 @@
 ---
-title: "Kontur <br> profi"
+title: "Kontur <br> &nbsp;"
 date: 2020-09-28T10:18:17+03:00
 draft: false 
 image: "images/dest/kontur.png"

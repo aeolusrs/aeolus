@@ -13,29 +13,25 @@ copyright = "Aeolus d.o.o Novi Sad"
           weight = 30 
           
           [[languages.en.menu.main]]
-                  url = "#"
+                  url = "#about" 
                   name = "About"
                   weight = 200 
           [[languages.en.menu.main]]
-                  url = "#"
-                  name = "Products"
+                  url = "#services"
+                  name = "Services"
                   weight = 250 
           [[languages.en.menu.main]]
-                  url = "#"
-                  name = "Services"
+                  url = "#advantages"
+                  name = "Advantages"
                   weight = 300 
           [[languages.en.menu.main]]
-                  url = "#"
-                  name = "Technology"
+                  url = "#siries"
+                  name = "Products"
                   weight = 350 
           [[languages.en.menu.main]]
-                  url = "#"
-                  name = "Resources"
-                  weight = 450 
-          [[languages.en.menu.main]]
-                  url = "#"
-                  name = "Contact"
-                  weight = 500 
+                  url = "#app"
+                  name = "Tillo"
+                  weight = 400 
 
      [languages.ru] 
           contentDir = "content/ru"
@@ -44,29 +40,25 @@ copyright = "Aeolus d.o.o Novi Sad"
           weight = 10
 
           [[languages.ru.menu.main]]
-                  url = "#"
+                  url = "#about"
                   name = "О нас"
                   weight = 200 
           [[languages.ru.menu.main]]
-                  url = "#"
-                  name = "Продукты"
+                  url = "#services"
+                  name = "Сервисы"
                   weight = 250 
           [[languages.ru.menu.main]]
-                  url = "#"
-                  name = "Сервисы"
+                  url = "#advantages"
+                  name = "Наши преимущества"
                   weight = 300 
           [[languages.ru.menu.main]]
-                  url = "#"
-                  name = "Технологии"
+                  url = "#siries"
+                  name = "Продукты"
                   weight = 350 
           [[languages.ru.menu.main]]
-                  url = "#"
-                  name = "Ресурсы"
-                  weight = 450 
-          [[languages.ru.menu.main]]
-                  url = "#"
-                  name = "Контакты"
-                  weight = 500 
+                  url = "#app"
+                  name = "Tillo"
+                  weight = 400 
 
      [languages.sr] 
           contentDir = "content/sr"
@@ -74,29 +66,25 @@ copyright = "Aeolus d.o.o Novi Sad"
           title = "Aeolus"
           weight = 20
           [[languages.sr.menu.main]]
-                  url = "#"
+                  url = "#about"
                   name = "О нама"
                   weight = 200 
           [[languages.sr.menu.main]]
-                  url = "#"
-                  name = "Производе"
+                  url = "#services"
+                  name = "Сервиси"
                   weight = 250 
           [[languages.sr.menu.main]]
-                  url = "#"
-                  name = "Сервисе"
+                  url = "#advantages"
+                  name = "Предности"
                   weight = 300 
           [[languages.sr.menu.main]]
-                  url = "#"
-                  name = "Технологије"
+                  url = "#siries"
+                  name = "Производи"
                   weight = 350 
           [[languages.sr.menu.main]]
-                  url = "#"
-                  name = "Ресурсе"
-                  weight = 450 
-          [[languages.sr.menu.main]]
-                  url = "#"
-                  name = "Контакте"
-                  weight = 500 
+                  url = "#app"
+                  name = "Tillo"
+                  weight = 400 
 
 [markup]
      defaultMarkdownHandler = "goldmark"

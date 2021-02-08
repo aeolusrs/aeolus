@@ -1,8 +1,8 @@
 ---
-title: "Kontur <br> start"
-date: 2020-09-28T10:18:30+03:00
+title: "Kontur"
+date: 2020-09-28T10:18:17+03:00
 draft: false 
-image: "images/dest/start.png"
+image: "images/dest/kontur.png"
 # DON'T CHANGE THE LINES ABOVE!
 ---
 

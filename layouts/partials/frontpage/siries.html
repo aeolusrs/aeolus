@@ -3,70 +3,65 @@
 	<div class="container">
 		<h2 class="h-bg h-bg-big text-center"><span class="bg">Siries</span>Kontur</h2>
 		<div class="description">
-            {{ with .Site.GetPage "frontpage/sections/kontur_section.md" }}
-                   {{ .Content }}
-            {{ end }}
+           {{ $headless := .Site.GetPage "/frontpage/sections" }}
+           {{ ($headless.Resources.GetMatch "kontur_section.md").Content }}
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-3">
-                         {{ with .Site.GetPage "frontpage/sections/kontur_antistress.md" }}
+                        {{ $headless1 := .Site.GetPage "/frontpage/kontur_cards" }}
                             <div class="kontur">
                                  <a href="#" class="kontur-image">
                                       <!-- TODO: Move images to md files -->
-                                      <img src="{{ .Params.image | relURL }}" alt="" title="" class="img-fluid">
+                                      <img src="{{ ($headless1.Resources.GetMatch "kontur.md").Params.image | relURL }}" alt="" title="" class="img-fluid">
                                  </a>
                                  <div class="description">
-                                       <h4 class="kontur-title">{{ .Title | safeHTML }}</h4>
-                                      {{ .Content }}
+                                       <h4 class="kontur-title">{{ ($headless1.Resources.GetMatch "kontur.md").Title | safeHTML }}</h4>
+                                      {{ ($headless1.Resources.GetMatch "kontur.md").Content }}
                                       <a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
                                  </div>
-                            </div>
-                        {{ end }}
+                           </div>
 			</div>
 			<div class="col-md-6 col-lg-3">
-                         {{ with .Site.GetPage "frontpage/sections/kontur_profi.md" }}
+                        {{ $headless2 := .Site.GetPage "/frontpage/kontur_cards" }}
                             <div class="kontur">
                                 <a href="#" class="kontur-image">
                                      <!-- TODO: Move images to md files -->
-                                     <img src="{{ .Params.image | relURL }}" alt="" title="" class="img-fluid">
+                                      <img src="{{ ($headless2.Resources.GetMatch "kontur_start.md").Params.image | relURL }}" alt="" title="" class="img-fluid">
                                 </a>
                                 <div class="description">
-                                      <h4 class="kontur-title">{{ .Title | safeHTML }}</h4>
-                                     {{ .Content }}
+                                      <h4 class="kontur-title">{{ ($headless1.Resources.GetMatch "kontur_start.md").Title | safeHTML }}</h4>
+                                      {{ ($headless2.Resources.GetMatch "kontur_start.md").Content }}
                                      <a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
                                 </div>
                            </div>
-                          {{ end }}
 			</div>
 			<div class="col-md-6 col-lg-3">
-                         {{ with .Site.GetPage "frontpage/sections/kontur_rost.md" }}
+                        {{ $headless3 := .Site.GetPage "/frontpage/kontur_cards" }}
                             <div class="kontur">
                                 <a href="#" class="kontur-image">
                                      <!-- TODO: Move images to md files -->
-                                     <img src="{{ .Params.image | relURL }}" alt="" title="" class="img-fluid">
+                                      <img src="{{ ($headless3.Resources.GetMatch "kontur_rost.md").Params.image | relURL }}" alt="" title="" class="img-fluid">
                                 </a>
                                 <div class="description">
-                                      <h4 class="kontur-title">{{ .Title | safeHTML }}</h4>
-                                     {{ .Content }}
+                                      <h4 class="kontur-title">{{ ($headless3.Resources.GetMatch "kontur_rost.md").Title | safeHTML }}</h4>
+                                      {{ ($headless2.Resources.GetMatch "kontur_rost.md").Content }}
                                      <a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
                                 </div>
                            </div>
-                          {{ end }}
 			</div>
 			<div class="col-md-6 col-lg-3">
-                         {{ with .Site.GetPage "frontpage/sections/kontur_start.md" }}
+                        {{ $headless4 := .Site.GetPage "/frontpage/kontur_cards" }}
                             <div class="kontur">
                                 <a href="#" class="kontur-image">
                                      <!-- TODO: Move images to md files -->
-                                     <img src="{{ .Params.image | relURL }}" alt="" title="" class="img-fluid">
+                                      <img src="{{ ($headless4.Resources.GetMatch "kontur_antistress.md").Params.image | relURL }}" alt="" title="" class="img-fluid">
                                 </a>
                                 <div class="description">
-                                      <h4 class="kontur-title">{{ .Title | safeHTML }}</h4>
-                                     {{ .Content }}
+                                      <h4 class="kontur-title">{{ ($headless4.Resources.GetMatch "kontur_antistress.md").Title | safeHTML }}</h4>
+                                      {{ ($headless2.Resources.GetMatch "kontur_antistress.md").Content }}
                                      <a href="#" class="btn btn-block green-btn">{{ i18n "moreDetails" }}</a>
                                 </div>
                            </div>
-                          {{ end }}
 			</div>
 		</div>
 	</div>
