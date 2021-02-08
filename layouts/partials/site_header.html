@@ -60,8 +60,8 @@
 				</li>
 
 			</ul>
-			<a href="#" class="contact d-none d-md-flex">{{ i18n "contact"}}</a>
+			<a href="{{ relLangURL "contacts" }}" class="contact d-none d-md-flex">{{ i18n "contact"}}</a>
 		</div>
-		<a href="tel:+78000000000" class="phone">8 800 000 00 00</a>
+		<a href="tel:{{ .Params.phoneInt | safeHTML}}" class="phone">{{ .Params.phone }}</a>
 	</div>
 </nav>

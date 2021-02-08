@@ -15,3 +15,27 @@ about:
 
 our:
      other: "наши"
+
+contactUs:
+     other: "Контактирајте нас"
+
+name:
+     other: "Име"
+
+email:
+     other: "E-mail"
+
+subject:
+     other: "Предмет"
+
+yourNamePlaceholder:
+     other: "Ваше име.."
+
+yourEmailPlaceholder:
+     other: "Ваша адреса е-поште.."
+
+writeSomethingPlaceholder:
+     other: "Напишите нешто"
+
+submit:
+     other: "Пошаљи"

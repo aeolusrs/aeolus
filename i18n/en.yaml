@@ -15,3 +15,27 @@ about:
 
 our:
      other: "our"
+
+contactUs:
+     other: "Contact Us"
+
+name:
+     other: "Name"
+
+email:
+     other: "E-mail"
+
+subject:
+     other: "Subject"
+
+yourNamePlaceholder:
+     other: "Your Name.."
+
+yourEmailPlaceholder:
+     other: "Your e-mail.."
+
+writeSomethingPlaceholder:
+     other: "Write something"
+
+submit:
+     other: "Submit"

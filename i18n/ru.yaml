@@ -15,3 +15,28 @@ about:
 
 our:
      other: "наши"
+
+contactUs:
+     other: "Свяжитесь с нами"
+
+name:
+     other: "Имя"
+
+email:
+     other: "E-mail"
+
+subject:
+     other: "Тема"
+
+yourNamePlaceholder:
+     other: "Ваше имя.."
+
+yourEmailPlaceholder:
+     other: "Ваш e-mail.."
+
+writeSomethingPlaceholder:
+     other: "Напишите здесь что-нибудь"
+
+submit:
+     other: "Отправить"
+
