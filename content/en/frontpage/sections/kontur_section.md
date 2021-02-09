@@ -1,5 +1,5 @@
 ---
-title: "Kontur section"
+title: "<span class='bg'>Kontur</span> series"
 date: 2020-09-28T10:05:49+03:00
 draft: false
 # DON'T CHANGE THE LINES ABOVE!

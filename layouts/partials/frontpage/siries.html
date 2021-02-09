@@ -1,9 +1,10 @@
 
 <section id="siries" class="py-5">
-	<div class="container">
-		<h2 class="h-bg h-bg-big text-center"><span class="bg">Siries</span>Kontur</h2>
-		<div class="description">
            {{ $headless := .Site.GetPage "/frontpage/sections" }}
+           {{ $header := ($headless.Resources.GetMatch "kontur_section.md").Title }}
+	<div class="container">
+		<h2 class="h-bg h-bg-big text-center">{{ printf $header | safeHTML}}</h2>
+		<div class="description">
            {{ ($headless.Resources.GetMatch "kontur_section.md").Content }}
 		</div>
 		<div class="row">

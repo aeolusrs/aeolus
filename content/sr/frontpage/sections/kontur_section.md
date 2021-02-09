@@ -1,13 +1,9 @@
 ---
-title: "Kontur section"
+title: "<span class='bg'>Контур</span> серија"
 date: 2020-09-28T10:05:49+03:00
 draft: false
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-An innovative complex organic-mineral fertilizer containing silver 
-nanoparticles in colloidal form, a complex of active plant L-amino 
-acids, a complex of trace elements, as well as humic and fulvic 
-acids/ An innovative complex organic-mineral fertilizer containing 
-silver nanoparticles in colloidal form, a complex of active plant 
-L-amino acids, a complex of trace elements, as well as humic and fulvic acids
+Иновативно сложено органско-минерално ђубриво које садржи наночестице сребра у колоидном облику, комплекс активних биљних Л-аминокиселина, комплекс елемената у траговима, као и хуминску и фулвинску киселину / Иновативно сложено органско-минерално ђубриво које садржи наночестице сребра у колоидном облик, комплекс активних биљних Л-аминокиселина, комплекс елемената у траговима, као и хуминска и фулво киселина
+
