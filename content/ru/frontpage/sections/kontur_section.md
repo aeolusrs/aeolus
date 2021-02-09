@@ -5,9 +5,4 @@ draft: false
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-An innovative complex organic-mineral fertilizer containing silver 
-nanoparticles in colloidal form, a complex of active plant L-amino 
-acids, a complex of trace elements, as well as humic and fulvic 
-acids/ An innovative complex organic-mineral fertilizer containing 
-silver nanoparticles in colloidal form, a complex of active plant 
-L-amino acids, a complex of trace elements, as well as humic and fulvic acids
+Инновационное комплексное органо-минеральное удобрение, содержащее наночастицы серебра в коллоидной форме, комплекс активных растительных L-аминокислот, комплекс микроэлементов, а также гуминовые и фульвокислоты.

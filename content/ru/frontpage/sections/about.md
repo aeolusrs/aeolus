@@ -1,13 +1,9 @@
 ---
-title: "About"
+title: "О нас"
 date: 2020-09-27T11:47:06+03:00
 draft: false 
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-The aim of our company is to increase the efficiency of 
-agricultural enterprises through the introduction of 
-the most modern plant protection technologies. We offer our 
-knowledge and experience in the field of development, 
-selection and use of chemical plant protection products in 
-the specific conditions of your agricultural enterprise.
+Целью нашей компании является повышение эффективности сельскохозяйственных предприятий за счет внедрения самых современных технологий защиты растений. Мы предлагаем свои знания и опыт в области разработки, выбора и применения химических средств защиты растений в конкретных условиях вашего сельскохозяйственного предприятия.
+
