@@ -62,6 +62,6 @@
 			</ul>
 			<a href="{{ relLangURL "contacts" }}" class="contact d-none d-md-flex">{{ i18n "contact"}}</a>
 		</div>
-		<a href="tel:{{ .Params.phoneInt | safeHTML}}" class="phone">{{ .Params.phone }}</a>
+		<a href="tel:{{ $.Site.Params.phoneInt}}" class="phone">{{ $.Site.Params.phone}}</a>
 	</div>
 </nav>

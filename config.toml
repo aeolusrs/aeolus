@@ -65,6 +65,9 @@ copyright = "Aeolus d.o.o Novi Sad"
           languageName = "Српски"
           title = "Aeolus"
           weight = 20
+          [languages.sr.params]
+               phone = "061 / 280-48-78"
+               phoneInt ="+381 61 280-48-78"
           [[languages.sr.menu.main]]
                   url = "#about"
                   name = "О нама"
@@ -95,3 +98,7 @@ copyright = "Aeolus d.o.o Novi Sad"
      [markup.goldmark]
           [markup.goldmark.parser]
                autoHeadingID = false
+
+[params]
+     phone = "8 913 488-22-47"
+     phoneInt = "+7 913 488-22-47"
