@@ -1,0 +1,19 @@
+{
+  "name": "aeolus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass --output-style compressed  src/sass/main.sass -o src/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "clean-css-cli": "^4.3.0",
+    "jquery": "^1.9.1",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1"
+  }
+}

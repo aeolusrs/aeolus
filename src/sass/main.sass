@@ -138,7 +138,7 @@
 #banner
 	padding-top: 5rem
 	padding-bottom: 5rem
-	background-image: url(../images/dest/bg1.png)
+	background-image: url(../images/dest/bg1.jpeg)
 	background-position: right bottom
 	background-size: cover
 	border-bottom: 5px solid #79b51f
@@ -291,8 +291,25 @@
 				color: #5e5e60
 				text-transform: uppercase
 
+@-webkit-keyframes fade
+		from
+			opacity: .4
+		to
+			opacity: 1
+
+@keyframes fade
+		from
+			opacity: .4
+		to
+			opacity: 1
+
 #app
 	#app-carousel
+		.carousel-item /* Custom fading */
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
 		.row
 			flex-direction: row
 		.app-controls
@@ -338,7 +355,7 @@
 				flex-direction: column-reverse
 
 #motivation
-	background-image: url(../images/dest/bg2.png)
+	background-image: url(../images/dest/bg2.jpeg)
 	background-size: cover
 	color: #fff
 	text-align: center
