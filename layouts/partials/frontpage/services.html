@@ -6,36 +6,30 @@
             {{ $headless := .Site.GetPage "/frontpage/sections" }}
             {{ ($headless.Resources.GetMatch "services.md").Content }}
 			<div class="row justify-content-center mt-5">
+                   {{ $headless1 := .Site.GetPage "/frontpage/cards" }}
 				<div class="col-md-6 col-lg-4 service_wrap">
 					<a href="#" class="service service_wh">
-						<h3 class="service_heading">Products</h3>
+						<h3 class="service_heading">{{ ($headless1.Resources.GetMatch "products.md").Title | safeHTML}}</h3>
 						<div class="description">
-							<p>Produced preparations undergo numerous 
-								tests in all the main soil-climatic 
-								zones of the Russian Federation.</p>
+							<p> {{ ($headless1.Resources.GetMatch "products.md").Content }}</p>
 							<span class="more"><svg xmlns="http://www.w3.org/2000/svg" width="30.439" height="30.508" viewBox="0 0 55.31 55.44" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M27.59 0C13.13 0 1.27 11.07 0 25.2h22.55v-7.56c0-1.02.62-1.94 1.55-2.33.94-.39 2.03-.17 2.75.55l10.08 10.08c.98.99.98 2.58 0 3.56L26.85 39.58c-.72.72-1.8.94-2.75.55a2.52 2.52 0 01-1.55-2.33v-7.56H0c1.28 14.13 13.13 25.2 27.59 25.2 15.31 0 27.72-12.41 27.72-27.72C55.31 12.41 42.9 0 27.59 0zm0 0z" fill="#fff"/></svg></span>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-6 col-lg-4 service_wrap">
 					<a href="#" class="service service_lgr">
-						<h3 class="service_heading">Tecnology</h3>
+						<h3 class="service_heading">{{ ($headless1.Resources.GetMatch "technology.md").Title | safeHTML}}</h3>
 						<div class="description">
-							<p>Aerial photography servicesprofessional 
-								unmanned aerial vehicles.
-								Digital terrain modeling.
-								Thermal imaging.</p>
+							<p> {{ ($headless1.Resources.GetMatch "technology.md").Content }}</p>
 							<span class="more"><svg xmlns="http://www.w3.org/2000/svg" width="30.439" height="30.508" viewBox="0 0 55.31 55.44" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M27.59 0C13.13 0 1.27 11.07 0 25.2h22.55v-7.56c0-1.02.62-1.94 1.55-2.33.94-.39 2.03-.17 2.75.55l10.08 10.08c.98.99.98 2.58 0 3.56L26.85 39.58c-.72.72-1.8.94-2.75.55a2.52 2.52 0 01-1.55-2.33v-7.56H0c1.28 14.13 13.13 25.2 27.59 25.2 15.31 0 27.72-12.41 27.72-27.72C55.31 12.41 42.9 0 27.59 0zm0 0z" fill="#fff"/></svg></span>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-6 col-lg-4 service_wrap">
 					<a href="#" class="service service_dgr">
-						<h3 class="service_heading">Remote control</h3>
+						<h3 class="service_heading">{{ ($headless1.Resources.GetMatch "remote_control.md").Title | safeHTML}}</h3>
 						<div class="description">
-							<p>Tillo is a simple app, which provides 
-								real-time control of everything that 
-								matters to you – from your phone</p>
+							<p> {{ ($headless1.Resources.GetMatch "remote_control.md").Content }}</p>
 							<span class="more"><svg xmlns="http://www.w3.org/2000/svg" width="30.439" height="30.508" viewBox="0 0 55.31 55.44" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M27.59 0C13.13 0 1.27 11.07 0 25.2h22.55v-7.56c0-1.02.62-1.94 1.55-2.33.94-.39 2.03-.17 2.75.55l10.08 10.08c.98.99.98 2.58 0 3.56L26.85 39.58c-.72.72-1.8.94-2.75.55a2.52 2.52 0 01-1.55-2.33v-7.56H0c1.28 14.13 13.13 25.2 27.59 25.2 15.31 0 27.72-12.41 27.72-27.72C55.31 12.41 42.9 0 27.59 0zm0 0z" fill="#fff"/></svg></span>
 						</div>
 					</a>
