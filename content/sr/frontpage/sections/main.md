@@ -5,10 +5,10 @@ draft: false
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-# Increasing the efficiency of <br> agricultural enterprises 
+# Повећавање ефикасности пољопривредних предузећа 
 
-A modern company specializing in the development, production and sale of chemical plant protection products
+Савремена компанија специјализована за развој, производњу и продају хемијских средстава за заштиту биља
 
-- Wide range of high quality products
-- Technologies for agribusiness 
-- Transition to environmental production
+- Широк асортиман висококвалитетних производа
+- Технологије за агробизнис
+- Прелазак на еколошку производњу

@@ -8,8 +8,8 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<h2 class="h-bg"><span class="bg">{{ i18n "about"}}</span> About company</h2>
                     {{ $headless := .Site.GetPage "/frontpage/sections" }}
+				<h2 class="h-bg"><span class="bg">{{ i18n "about"}}</span>{{ ($headless.Resources.GetMatch "about.md").Title }} </h2>
                     {{ ($headless.Resources.GetMatch "about.md").Content }}
 					<a href="#" class="btn green-btn">{{ i18n "moreDetails" }}</a>
 			</div>

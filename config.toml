@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "Aeolus d.o.o. Novi Sad"
-defaultContentLanguage = "en"
+defaultContentLanguage = "sr"
 defaultContentLanguageInSubdir = true
 disableHugoGeneratorInject = true
 copyright = "Aeolus d.o.o Novi Sad"

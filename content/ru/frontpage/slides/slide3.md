@@ -5,10 +5,5 @@ draft: false
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-With Tillo.app you can record, share and retrieve any information 
-you need of your farm business, directly from your phone with one 
-click. Tillo.app provides real-time control and visibility of 
-anything that matters to you and your team.With Tillo.app 
-you can record, share and retrieve any information you need 
-of your farm business
+Когда данные о сельском хозяйстве собираются с помощью Tillo.app, их можно сразу просмотреть, проанализировать и поделиться ими. Теперь вы можете тратить меньше времени на управление и больше на сельское хозяйство.
 

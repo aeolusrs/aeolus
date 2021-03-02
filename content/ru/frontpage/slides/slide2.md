@@ -5,6 +5,4 @@ draft: false
 # DON'T CHANGE THE LINES ABOVE!
 ---
 
-With Tillo.app you can record, share and retrieve any information 
-you need of your farm business, directly from your phone with one 
-click. Tillo.app provides real
+Вы можете использовать Tillo.app на своем смартфоне и планшете с помощью нашего приложения для Android или iOS или с компьютера через наше веб-приложения - выберите, что вам больше всего подходит!

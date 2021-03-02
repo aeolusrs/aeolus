@@ -2,8 +2,8 @@
 
 <section id="services" class="py-5">
 	<div class="container">
-		<h2 class="h-bg h-bg-big text-center"><span class="bg">{{ i18n "our" }}</span>Services</h2>
-            {{ $headless := .Site.GetPage "/frontpage/sections" }}
+          {{ $headless := .Site.GetPage "/frontpage/sections" }}
+		<h2 class="h-bg h-bg-big text-center"><span class="bg">{{ i18n "our" }}</span>{{ ($headless.Resources.GetMatch "services.md").Title }}</h2>
             {{ ($headless.Resources.GetMatch "services.md").Content }}
 			<div class="row justify-content-center mt-5">
                    {{ $headless1 := .Site.GetPage "/frontpage/cards" }}

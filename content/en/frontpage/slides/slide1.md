@@ -4,6 +4,8 @@ date: 2020-09-28T13:25:25+03:00
 draft: false 
 # DON'T CHANGE THE LINES ABOVE!
 ---
-When farming data is collected using Tillo.app, it can be viewed, 
-analysed and shared immediately. Now, you can spend less time on data 
-admin and more time on farming.
+
+With Tillo.app you can record, share and retrieve any information 
+you need of your farm business, directly from your phone with one 
+click. Tillo.app provides real-time control and visibility of 
+anything that matters to you and your team.

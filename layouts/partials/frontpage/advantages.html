@@ -5,63 +5,64 @@
 		<h2>{{ ($headless.Resources.GetMatch "advantages.md").Title | safeHTML}}</h2>
           {{ ($headless.Resources.GetMatch "advantages.md").Content }}
 		<div class="row justify-content-center">
+               {{ $benefits := .Site.GetPage "/frontpage/benefits" }}
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="{{ "images/dest/ic_1.png" | relURL}}" alt="" title="">
+						<img src="{{ ($benefits.Resources.GetMatch "benefit1.md").Params.image | relURL}}" alt="" title="">
 					</div>
 					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>{{ ($benefits.Resources.GetMatch "benefit1.md").Content }}</p>
 					</div>					
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="{{ "images/dest/ic_2.png" | relURL }}" alt="" title="">
+						<img src="{{ ($benefits.Resources.GetMatch "benefit2.md").Params.image | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>{{ ($benefits.Resources.GetMatch "benefit2.md").Content }}</p>
 					</div>					
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="{{ "images/dest/ic_3.png" | relURL }}" alt="" title="">
+						<img src="{{ ($benefits.Resources.GetMatch "benefit3.md").Params.image | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>{{ ($benefits.Resources.GetMatch "benefit3.md").Content }}</p>
 					</div>					
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src=" {{"images/dest/ic_4.png" | relURL }}" alt="" title="">
+						<img src="{{ ($benefits.Resources.GetMatch "benefit4.md").Params.image | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>{{ ($benefits.Resources.GetMatch "benefit4.md").Content }}</p>
 					</div>					
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="{{"images/dest/ic_5.png" | relURL }}" alt="" title="">
+						<img src="{{ ($benefits.Resources.GetMatch "benefit5.md").Params.image | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>{{ ($benefits.Resources.GetMatch "benefit5.md").Content }}</p>
 					</div>					
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-3 col-xl-2">
 				<div class="advantage">
 					<div class="icon">
-						<img src="{{"images/dest/ic_6.png" | relURL }}" alt="" title="">
+						<img src="{{ ($benefits.Resources.GetMatch "benefit6.md").Params.image | relURL }}" alt="" title="">
 					</div>
 					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>{{ ($benefits.Resources.GetMatch "benefit6.md").Content }}</p>
 					</div>					
 				</div>
 			</div>
