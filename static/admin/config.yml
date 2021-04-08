@@ -9,6 +9,6 @@ collections:
        files:
           - label: "Hero Block"
             name: "main"
-            file: "sr/frontpage/sections/main.md"
+            file: "content/sr/frontpage/sections/main.md"
             fields:
                - {label: "Садржај", name: "body", widget: "markdown"}
