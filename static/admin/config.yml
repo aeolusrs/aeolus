@@ -3,10 +3,10 @@ backend:
      branch: master
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
-i18n:
-     structure: multiple_folders
-     locales: [en, ru, sr]
-     default_locale: sr
+#i18n:
+#     structure: multiple_folders
+#     locales: [en, ru, sr]
+#     default_locale: sr
 #collections:
 #     - label: "Serbian site"
 #       name: "sr"
@@ -18,10 +18,10 @@ i18n:
 #               - {label: "Садржај", name: "body", widget: "markdown"}
 collections:
      - name: pages
-       i18n: true 
+       #i18n: true 
        label: Pages
        label_singular: 'Page'
-       folder: content
+       folder: content/sr
        create: false
        nested:
             depth: 100
