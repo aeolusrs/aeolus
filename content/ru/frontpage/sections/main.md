@@ -1,8 +1,7 @@
 ---
-title: "Main"
+title: Main
 date: 2020-07-21T11:47:06+03:00
-draft: false 
-# DON'T CHANGE THE LINES ABOVE!
+draft: false
 ---
 
 # Повышение эффективности <br> сельскохозяйственных предприятий.
