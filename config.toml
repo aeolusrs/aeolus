@@ -66,8 +66,8 @@ copyright = "Aeolus d.o.o Novi Sad"
           title = "Aeolus"
           weight = 20
           [languages.sr.params]
-               phone = "061 / 280-48-78"
-               phoneInt ="+381 61 280-48-78"
+               phone = "060 / 0579-11-19"
+               phoneInt ="+381 60 0579-11-19"
           [[languages.sr.menu.main]]
                   url = "#about"
                   name = "О нама"
