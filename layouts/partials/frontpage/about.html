@@ -11,7 +11,7 @@
                     {{ $headless := .Site.GetPage "/frontpage/sections" }}
 				<h2 class="h-bg"><span class="bg">{{ i18n "about"}}</span>{{ ($headless.Resources.GetMatch "about.md").Title }} </h2>
                     {{ ($headless.Resources.GetMatch "about.md").Content }}
-					<a href="#" class="btn green-btn">{{ i18n "moreDetails" }}</a>
+					<a href="{{ relLangURL "about" }}" class="btn green-btn">{{ i18n "moreDetails" }}</a>
 			</div>
 		</div>
 	</div>
